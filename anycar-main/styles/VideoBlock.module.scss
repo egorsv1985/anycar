@@ -1,0 +1,149 @@
+.video {
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 180px;
+
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      max-width: 790px;
+      height: 390px;
+
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      border: 1px dotted #52DAAC;
+
+      z-index: 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+
+      max-width: 710px;
+
+      font-family: 'Gilroy', sans-serif;
+
+      font-size: 48px;
+      line-height: 72px;
+      font-weight: 400;
+
+      text-align: center;
+      letter-spacing: -0.015em;
+
+      color: #0D0A46;
+
+      span {
+        font-family: 'Gilroy', sans-serif;
+        background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  &__preview {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__image {
+    max-width: 730px;
+    width: 100%;
+  }
+
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) scale(1);
+
+    cursor: pointer;
+
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 #52DAAC;
+
+    animation: pulse 2s infinite;
+  }
+
+  &__decor {
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    width: 100%;
+
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .video {
+    & > div {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .video {
+    & > div {
+      padding-bottom: 120px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .video {
+    & > div {
+      padding-bottom: 70px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &:before {
+        height: 160px;
+      }
+  
+      h2 {
+        margin-bottom: 10px;
+
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    &__play {
+      max-width: 85px;
+    }
+  
+    &__decor {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+  
+      z-index: 0;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(-50%) translateX(-50%) scale(0.95);
+    box-shadow: 0 0 0 0 rgba(#52DAAC, 80%);
+  }
+  70% {
+    transform: translateY(-50%) translateX(-50%) scale(1);
+    box-shadow: 0 0 0 10px rgba(#52DAAC, 0%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) scale(0.95);
+    box-shadow: 0 0 0 0 rgba(#52DAAC, 0%);
+  }
+}

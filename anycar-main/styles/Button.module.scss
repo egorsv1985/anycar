@@ -1,0 +1,92 @@
+.button {
+  height: 56px;
+  padding: 0 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #52DAAC;
+  background-image:  linear-gradient(90deg, #4CB7CC 0%, #4CB7CC 50%, #52DAAC 100%);
+  box-shadow: 0 24px 48px rgba(120, 162, 147, 0.16), 0 15px 30px rgba(20, 102, 204, 0.16);
+  border-radius: 10px;
+  border: 2px solid transparent;
+
+  background-origin: border-box;
+  background-size: 200%;
+  background-position-x: 100%;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+
+  color: #FFFFFF;
+
+  transition: .2s ease-in-out;
+  transition-property: background-position, box-shadow;
+
+  &:hover:not(:disabled) {
+    background-position-x: 0;
+    box-shadow: 0 0 5px rgba(120, 162, 147, 0.16), 0 15px 30px rgba(20, 102, 204, 0.16);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  &.outlined {
+    position:relative;
+    background: transparent;
+    z-index:0;
+
+    background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: none;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+      -webkit-mask: linear-gradient(#F7F8FC 0 0) content-box,
+      linear-gradient(#F7F8FC 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+  }
+
+  &.white {
+    background: #FFFFFF;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+
+    span {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+
+      background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    svg {
+      margin-left: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      box-shadow: none;
+
+      svg {
+        transform: translateX(10px);
+      }
+    }
+  }
+}

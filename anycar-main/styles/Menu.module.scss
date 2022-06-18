@@ -1,0 +1,55 @@
+.menu {
+  position: fixed;
+  overflow-y: auto;
+  top: -100%;
+  width: 100vw;
+  max-height: calc(100vh - 90px);
+  background: #F7F8FC;
+
+  padding: 30px 30px 15px;
+  box-shadow: 1px 20px 25px rgb(70 88 119 / 30%);
+
+  z-index: 11;
+
+  transition: all 0.3s ease-in-out;
+
+  &.opened {
+    top: 90px;
+  }
+
+  &__wrapper {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+    & > a {
+      padding: 10px 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 175%;
+
+      color: #0D0A46;
+    }
+
+    & > button {
+      max-width: 280px;
+      margin: 10px auto 25px;
+    }
+
+    .developedBy {
+      padding-top: 10px;
+    
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+
+      border-top: 1px solid #E5E9ED;
+
+      background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      opacity: 0.8;
+    }
+  }
+}

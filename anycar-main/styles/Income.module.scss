@@ -1,0 +1,174 @@
+.income {
+  overflow: hidden;
+
+  position: relative;
+
+  & > div {
+    padding: 55px 70px 40px;
+    max-width: 1200px;
+    background: url("../public/images/mainPage/income-bg.png") no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+    position: relative;
+  }
+
+  &__left {
+    max-width: 515px;
+
+    h2 {
+      margin-bottom: 20px;
+
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 45px;
+
+      color: #FFFFFF;
+    }
+
+    p {
+      margin-bottom: 40px;
+
+      max-width: 440px;
+      font-size: 14px;
+      line-height: 175%;
+
+      color: #FFFFFF;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    right: -40px;
+    top: -180px;
+    max-width: 850px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .income {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .income {
+    overflow: hidden;
+  
+    & > div {
+      padding: 40px;
+    }
+  
+    &__left {
+      max-width: 515px;
+  
+      h2 {
+        margin-bottom: 20px;
+  
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 45px;
+  
+        color: #FFFFFF;
+      }
+  
+      p {
+        margin-bottom: 40px;
+  
+        max-width: 440px;
+        font-size: 14px;
+        line-height: 175%;
+  
+        color: #FFFFFF;
+      }
+    }
+  
+    &__right {
+      position: absolute;
+      right: -40px;
+      top: -120px;
+      max-width: 700px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .income {
+    overflow: hidden;
+  
+    & > div {
+      padding: 40px;
+    }
+  
+    &__left {
+  
+      h2 {
+        max-width: 400px;
+        font-size: 28px;
+        line-height: 36px;
+      }
+  
+      p {
+        margin-bottom: 40px;
+
+        max-width: 330px;
+  
+        font-size: 14px;
+        line-height: 175%;
+  
+        color: #FFFFFF;
+      }
+    }
+  
+    &__right {
+      position: absolute;
+      right: -70px;
+      top: -40px;
+      max-width: 530px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .income {
+    padding-left: 15px;
+    padding-right: 15px;
+    & > div {
+      padding: 50% 10px 70px;
+    }
+  
+    &__left {
+      max-width: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      h2 {
+        max-width: none;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        font-weight: 500;
+      }
+  
+      p {
+        margin-bottom: 30px;
+
+        max-width: none;
+        text-align: center;
+      }
+    }
+  
+    &__right {
+      position: absolute;
+      left: 50%;
+      top: -60px;
+
+      width: 80%;
+      max-width: 470px;
+  
+      transform: translateX(-50%);
+    }
+  }
+}

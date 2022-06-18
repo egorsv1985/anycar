@@ -1,0 +1,199 @@
+main {
+  .MuiPaper-elevation1 {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  .MuiAccordion-root:before {
+    content: none;
+  }
+
+  .MuiPaper-root {
+    background-color: #F5F7FC;
+  }
+
+  .MuiAccordionSummary-root {
+    padding: 0 25px;
+    min-height: 45px;
+  }
+
+  .MuiIconButton-label {
+    display: none;
+  }
+
+  .MuiTypography-body1 {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 25px;
+
+    color: #0D0A46;
+  }
+
+  .MuiIconButton-root {
+    padding: 0;
+  }
+
+  .MuiButtonBase-root.MuiIconButton-root.MuiAccordionSummary-expandIcon.MuiIconButton-edgeEnd {
+    position: relative;
+
+    &:after {
+      content: url("../public/images/icons/accordion-closed.svg");
+    }
+  }
+
+  .MuiButtonBase-root.MuiIconButton-root.MuiAccordionSummary-expandIcon.Mui-expanded.MuiIconButton-edgeEnd {
+    position: relative;
+
+    &:after {
+      content: url("../public/images/icons/accordion-opened.svg");
+    }
+  }
+
+  .MuiAccordion-root.Mui-expanded {
+    margin: 0;
+  }
+
+  .MuiAccordionSummary-content.Mui-expanded {
+    margin: 0;
+  }
+
+  .MuiButtonBase-root.MuiAccordionSummary-root.Mui-expanded {
+    background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+    min-height: 45px;
+    border-radius: 10px;
+
+    .MuiTypography-root {
+      color: #F5F7FC;
+    }
+  }
+
+  .MuiAccordionDetails-root {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 25px;
+    p {
+      font-size: 14px;
+      line-height: 151.01%;
+
+      color: #555371;
+    }
+
+    ul {
+      padding-left: 20px;
+      li {
+        font-size: 14px;
+        line-height: 151.01%;
+
+        list-style-type: disc;
+
+        color: #555371;
+      }
+    }
+  }
+
+  .MuiAccordion-rounded:last-child {
+    border-radius: 10px;
+  }
+}
+
+.Menu_menu__161Su {
+  .MuiAccordion-root:before {
+    content: none;
+  }
+
+  .MuiPaper-elevation1 {
+    box-shadow: none;
+  }
+
+  .MuiPaper-root {
+    background-color: #F5F7FC;
+    border-bottom: 1px solid #E5E9ED;
+  }
+
+  .MuiAccordionSummary-root {
+    padding-left: 0;
+    min-height: 45px;
+  }
+
+  .MuiTypography-body1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+
+    color: #0D0A46;
+  }
+
+  .MuiIconButton-root {
+    padding: 0;
+  }
+
+  .MuiAccordion-root.Mui-expanded {
+    margin: 0;
+  }
+
+  .MuiAccordionSummary-content.Mui-expanded {
+    margin: 0;
+
+    .MuiTypography-body1 {
+      background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .MuiButtonBase-root.MuiAccordionSummary-root.Mui-expanded {
+    min-height: 45px;
+  }
+
+  .MuiAccordionDetails-root {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 20px 20px;
+
+    ul {
+      li {
+        a {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 175%;
+
+          color: #747A96;
+        }
+      }
+    }
+  }
+
+  .MuiAccordion-rounded:last-child {
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    .MuiTypography-body1 {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    .MuiAccordionSummary-root {
+      padding: 0 20px;
+    }
+  
+    .MuiAccordionDetails-root {
+      p {
+        font-size: 12px;
+        line-height: 151.01%;
+      }
+  
+      ul {
+        li {
+          font-size: 12px;
+          line-height: 151.01%;
+        }
+      }
+    }
+  }
+}

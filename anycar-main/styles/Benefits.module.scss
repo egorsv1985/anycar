@@ -1,0 +1,239 @@
+.benefits {
+  & > div {
+    h2 {
+      margin-bottom: 40px;
+      font-family: "Gilroy", sans-serif;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 72px;
+
+      text-align: center;
+      letter-spacing: -0.015em;
+
+      color: #0D0A46;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 50px;
+    align-items: center;
+
+    &_left {
+      max-width: 550px;
+    }
+
+    &_right {
+      display: flex;
+      flex-direction: column;
+
+      .benefit {
+        display: flex;
+
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+
+        &__icon {
+          margin-right: 40px;
+
+          width: 115px;
+          height: 115px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          background: #F5F7FC;
+          box-shadow: -15px -15px 20px rgb(255 255 255 / 80%), 15px 15px 20px rgb(57 65 124 / 8%);
+          border-radius: 20px;
+
+          img {
+            width: 55px;
+            object-fit: contain;
+          }
+        }
+
+        &__text {
+          display: flex;
+          flex-direction: column;
+
+          h3 {
+            margin-bottom: 15px;
+
+            font-family: "Gilroy", sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 173.43%;
+
+            color: #0D0A46;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 173.43%;
+
+            color: #555371
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .benefits {
+    & > div {
+      h2 {
+        margin-bottom: 40px;
+        font-family: "Gilroy", sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 72px;
+  
+        text-align: center;
+        letter-spacing: -0.015em;
+  
+        color: #0D0A46;
+      }
+    }
+  
+    &__content {
+      display: grid;
+      grid-template-columns: 100%;
+      row-gap: 40px;
+      align-items: center;
+      justify-items: center;
+  
+      &_left {
+        max-width: 550px;
+        width: 50%;
+      }
+  
+      &_right {
+        display: flex;
+        flex-direction: column;
+  
+        .benefit {
+          display: flex;
+  
+          &:not(:last-child) {
+            margin-bottom: 40px;
+          }
+  
+          &__icon {
+            margin-right: 40px;
+  
+            width: 115px;
+            height: 115px;
+  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+  
+            img {
+              width: 55px;
+              object-fit: contain;
+            }
+          }
+  
+          &__text {
+            display: flex;
+            flex-direction: column;
+  
+            h3 {
+              margin-bottom: 15px;
+  
+              font-family: "Gilroy", sans-serif;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 173.43%;
+  
+              color: #0D0A46;
+            }
+  
+            p {
+              font-size: 14px;
+              line-height: 173.43%;
+  
+              color: #555371
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits {
+    & > div {
+      h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  
+    &__content {
+      display: grid;
+      grid-template-columns: 100%;
+      row-gap: 40px;
+      align-items: center;
+      justify-items: center;
+  
+      &_left {
+        max-width: 400px;
+        width: 100%;
+      }
+  
+      &_right {
+        display: flex;
+        flex-direction: column;
+  
+        .benefit {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+  
+          &:not(:last-child) {
+            margin-bottom: 40px;
+          }
+  
+          &__icon {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+  
+          &__text {
+            display: flex;
+            flex-direction: column;
+  
+            h3 {
+              margin-bottom: 15px;
+  
+              font-family: "Gilroy", sans-serif;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 173.43%;
+  
+              text-align: center;
+  
+              color: #0D0A46;
+            }
+  
+            p {
+              font-size: 14px;
+              line-height: 173.43%;
+  
+              text-align: center;
+  
+              color: #555371
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.Blog_main__2OXHx {
+  .MuiPagination-root {
+    padding-top: 70px;
+
+    display: flex;
+    justify-content: center;
+
+    li {
+      flex: none;
+      padding-left: 15px;
+      position: relative;
+    }
+
+    .MuiButtonBase-root {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #F5F7FC;
+      box-shadow: -16px -16px 40px rgba(245, 247, 252, 0.8), 5px 7px 20px rgba(18, 61, 101, 0.1), -16px 4px 80px rgba(18, 61, 101, 0.25), inset -8px -6px 80px rgba(245, 247, 252, 0.8);
+
+      &.Mui-selected {
+        color: #52DAAC;
+      }
+    }
+  }
+}

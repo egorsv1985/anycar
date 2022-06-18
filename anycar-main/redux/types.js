@@ -1,0 +1,10 @@
+// REDUX ACTION TYPES
+export const USD_COURSE = 'USD_COURSE'
+export const FETCH_PAGE = 'FETCH_PAGE'
+export const FETCH_MENU = 'FETCH_MENU'
+export const FETCH_FOOTER = 'FETCH_FOOTER'
+export const FETCH_POLICY = 'FETCH_POLICY'
+export const FETCH_AGREEMENT = 'FETCH_AGREEMENT'
+export const FETCH_POSTS = 'FETCH_POSTS'
+export const FETCH_CARS = 'FETCH_CARS'
+export const FETCH_POST = 'FETCH_POST'

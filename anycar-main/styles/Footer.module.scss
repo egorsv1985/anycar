@@ -1,0 +1,143 @@
+.footer {
+  background: #ECEEF6;
+  position: relative;
+
+  & > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 60px;
+
+    padding-top: 190px;
+    padding-bottom: 170px;
+  }
+
+  &__block {
+    &_top {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+
+      color: rgba(#0D0A46, 0.8);
+
+      display: flex;
+      align-items: center;
+      height: 65px;
+      padding-bottom: 10px;
+
+      position: relative;
+
+      & > img {
+        width: 110px;
+      }
+
+      &:after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+      }
+    }
+
+    &_links {
+      padding-top: 25px;
+
+      display: grid;
+      grid-template-columns: 100%;
+      row-gap: 25px;
+
+      li, li > a {
+        font-size: 14px;
+        line-height: 17px;
+
+        color: rgba(#555371, 0.8);
+
+        a:hover {
+          color: #0D0A46;
+        }
+      }
+    }
+
+    .socials {
+      margin-top: 25px;
+
+      display: grid;
+      grid-template-columns: repeat(3, 34px);
+      column-gap: 20px;
+
+      li {
+        a {
+           img {
+             width: 34px;
+             border-radius: 50%;
+             box-shadow: 0 13px 18px rgba(17, 19, 35, 0.08);
+
+             &:hover {
+               box-shadow: -2px -2px 5px rgb(255 255 255 / 90%), 2px 2px 4px rgb(57 65 124 / 20%);
+             }
+           }
+        }
+      }
+    }
+  }
+
+  .gradientLine {
+    height: 5px;
+    width: 100%;
+    padding: 0;
+
+    background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+  }
+
+  .developedBy {
+    margin-bottom: 25px;
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+
+    opacity: 0.8;
+
+    color: rgba(#555371, 0.8);
+
+    a {
+      background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    background: #ECEEF6;
+  
+    & > div {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+  
+      padding-top: 90px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    & > div {
+      grid-template-columns: 100%;
+      padding-top: 160px;
+    }
+  
+    &__block {
+
+      &:first-child {
+        order: 4;
+      }
+    }
+  }
+}
+

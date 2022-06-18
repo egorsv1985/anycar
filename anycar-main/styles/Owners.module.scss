@@ -1,0 +1,151 @@
+.owners {
+  position: relative;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .owner {
+      max-width: 930px;
+      display: flex;
+
+      background: #f7f8fc;
+      box-shadow: -15px -15px 20px rgb(255 255 255 / 80%), 15px 15px 20px rgb(57 65 124 / 8%);
+      border-radius: 20px;
+      
+      padding-left: 20px;
+
+      &:last-child {
+        margin-top: 115px;
+        align-self: flex-end;
+      }
+
+      & > img {
+        width: 440px;
+        object-fit: contain;
+      }
+
+      &__info {
+        padding-top: 90px;
+        padding-right: 60px;
+
+        position: relative;
+        h3 {
+          margin-bottom: 10px;
+
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 173%;
+
+          color: #0D0A46;
+        }
+
+        span {
+          margin-bottom: 40px;
+
+          display: block;
+          font-size: 14px;
+          line-height: 173.43%;
+
+          color: #0D0A46;
+        }
+
+        p {
+          margin-bottom: 40px;
+
+          font-size: 14px;
+          line-height: 175%;
+
+          color: #555371;
+        }
+      }
+
+      &__socials {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        span {
+          padding: 0 5px;
+
+          font-size: 14px;
+          line-height: 173.43%;
+
+          color: rgba(85, 83, 113, 0.4);
+        }
+
+        a {
+          font-size: 14px;
+          line-height: 173.43%;
+
+          color: rgba(85, 83, 113, 0.4);
+
+          &:hover {
+            color: #52DAAC;
+          }
+        }
+      }
+
+      &__decor {
+        position: absolute;
+        max-width: 440px;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .owners {
+    & > div {
+      .owner {
+        & > img {
+          width: 40%;
+          height: max-content;
+          align-self: flex-end;
+        }
+  
+        &__info {
+          padding-top: 30px;
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .owners {
+    & > div {
+      align-items: center;
+  
+      .owner {
+        flex-direction: column-reverse;
+  
+        &:last-child {
+          margin-top: 40px;
+          align-self: center;
+        }
+  
+        & > img {
+          width: 100%;
+          max-width: 500px;
+          align-self: center;
+          z-index: 1;
+        }
+  
+        &__info {
+          padding-top: 60px;
+          padding-right: 25px;
+          h3 {
+            margin-bottom: 15px;
+  
+            font-size: 28px;
+            line-height: 120%;
+          }
+        }
+      }
+    }
+  }
+}

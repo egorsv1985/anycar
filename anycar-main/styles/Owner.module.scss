@@ -1,0 +1,143 @@
+.owner {
+  & > div {
+    max-width: 1200px;
+    padding: 70px 65px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background: url("../public/images/rent/requirements-bg.png") no-repeat, #ECEEF6;
+    background-size: contain;
+    border-radius: 20px;
+
+    position: relative;
+
+    & > img {
+      position: absolute;
+      left: 80px;
+      bottom: 0;
+
+      max-width: 440px;
+    }
+  }
+
+  &__right {
+    max-width: 530px;
+    h2 {
+      margin-bottom: 20px;
+
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 45px;
+
+      color: #0D0A46;
+    }
+
+    p {
+      margin-bottom: 40px;
+
+      font-size: 16px;
+      line-height: 25px;
+
+      color: #555371;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .owner {
+    padding-left: 30px;
+    padding-right: 30px;
+    & > div {
+      max-width: 1200px;
+      padding: 70px 30px;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+  
+      background: url("../public/images/rent/requirements-bg.png") no-repeat, #ECEEF6;
+      background-size: contain;
+      border-radius: 20px;
+  
+      position: relative;
+  
+      & > img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+  
+        max-width: 440px;
+        width: 40%;
+      }
+    }
+  
+    &__right {
+      max-width: 530px;
+      width: 60%;
+      h2 {
+        margin-bottom: 20px;
+  
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 45px;
+  
+        color: #0D0A46;
+      }
+  
+      p {
+        margin-bottom: 40px;
+  
+        font-size: 16px;
+        line-height: 25px;
+  
+        color: #555371;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .owner {
+    padding-left: 15px;
+    padding-right: 15px;
+    & > div {
+      padding: 50px 10px 0;
+  
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+  
+      & > img {
+        position: static;
+  
+        max-width: 440px;
+        width: 100%;
+      }
+    }
+  
+    &__right {
+      max-width: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+      }
+  
+      p {
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+      }
+
+      button {
+        width: max-content;
+      }
+    }
+  }
+}

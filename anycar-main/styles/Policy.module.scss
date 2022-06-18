@@ -1,0 +1,133 @@
+.main {
+  .policy {
+    padding-bottom: 100px;
+    & > div {
+      max-width: 860px;
+      padding-top: 100px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        margin-bottom: 25px;
+
+        align-self: flex-end;
+        width: 100%;
+
+        text-align: left;
+
+        font-family: "Gilroy", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+
+        color: #0D0A46;
+
+        span {
+          font-family: "Gilroy", sans-serif;
+          background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        align-content: flex-start;
+
+        width: 100%;
+        padding-bottom: 8px;
+
+        font-family: "Gilroy", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+
+        color: #0D0A46;
+
+        position: relative;
+
+        &:after {
+          content: "";
+          height: 1px;
+          width: 100%;
+          background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      p {
+        margin-bottom: 25px;
+        align-self: flex-end;
+
+        font-size: 14px;
+        line-height: 150%;
+
+        color: #555371;
+      }
+    }
+
+    &__toggle {
+      margin-bottom: 40px;
+
+      display: flex;
+      padding: 5px;
+
+      background: #FFFFFF;
+      border-radius: 10px;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        height: 40px;
+        padding: 0 20px;
+
+        font-family: "Gilroy", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #555371;
+
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        &.active {
+          background: linear-gradient(90deg, #4CB7CC 0%, #52DAAC 100%);
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    .policy {
+      padding-bottom: 70px;
+      & > div {
+        padding-top: 40px;
+  
+        h1 {
+          font-size: 18px;
+          line-height: 150%;
+        }
+      }
+  
+      &__toggle {
+        flex-direction: column;
+  
+        li {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
